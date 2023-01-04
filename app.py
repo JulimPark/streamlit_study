@@ -21,3 +21,4 @@ st.write(out)
 
 st.markdown('Streamlit is **_really_ cool**.')
 st.markdown(":green[$\sqrt{x^2+y^2}=1$] is a Pythagorean identity. :pencil:")
+st.markdown('this text is :red[colored red], and this is :blue[colored pencil]')
