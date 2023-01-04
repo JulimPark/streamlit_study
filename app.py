@@ -10,4 +10,3 @@ c= [4,5,6]
 
 st.bar_chart(c)
 st.write('this is mouth')
-print('plxz')
