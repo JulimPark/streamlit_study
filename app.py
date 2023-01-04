@@ -19,3 +19,5 @@ st.write('this is mouth')
 st.write('Hello **world**!')
 st.write(out)
 
+st.markdown('Streamlit is **_really_ cool**.')
+st.markdown(":green[$\sqrt{x^2+y^2}=1$] is a Pythagorean identity. :pencil:")
