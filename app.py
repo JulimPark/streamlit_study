@@ -5,3 +5,7 @@ st.bar_chart(a)
 b = [1,2,3]
 
 st.bar_chart(b)
+
+c= [4,5,6]
+
+st.bar_chart(c)
