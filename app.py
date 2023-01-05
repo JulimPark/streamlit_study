@@ -15,11 +15,13 @@ st.write('현재 시험지는 '+test_num+'입니다')
 question_num = st.text_input(':green[문항 수]를 입력하세요', 20)
 st.write('문항 수는 '+question_num+'문항 입니다')
 
-no1 = st.radio(
-    '1번 문항의 정답을 입력하세요.',('1','2','3','4','5')
-)
-st.write(no1)
+# no1 = st.radio(
+#     '1번 문항의 정답을 입력하세요.',('1','2','3','4','5')
+# )
+# st.write(no1)
 
-for i in range(1, int(question_num)):
-    st.radio(str(i)+'번 문항의 정답을 입력하세요.',('1','2','3','4','5'))
+no=['no1', 'no2','no3']
+
+for i in range(0, int(question_num)):
+    no[i] = st.radio(str(i)+'번 문항의 정답을 입력하세요.',('1','2','3','4','5'))
     st.write(i)
