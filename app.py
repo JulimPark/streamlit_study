@@ -14,7 +14,10 @@ st.write('현재 응시자는 '+stu_name+'입니다')
 test_num = st.text_input('*:red[시험지코드]를 입력하세요 ', '0001')
 st.write('현재 시험지는 '+test_num+'입니다')
 
-st.write(test_code['시험지코드']==test_num)
+kk = test_code['시험지코드']==test_num
+
+st.write(kk)
+
 st.write(test_code.index[(test_code['시험지코드']==str(test_num))])
 
 
