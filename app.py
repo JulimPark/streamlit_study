@@ -22,10 +22,11 @@ def button_1():
     global num
     global ans
     global test_list
+    global df
     
     num = num+1
-    df.loc[num]=[num, 1]
-    st.dataframe(df)
+    df.append({'문항번호':num, '학생답':1})
+    st.write(df)
 
 
 def button_2():
