@@ -41,7 +41,7 @@ def show_pdf2(file_path):
 
 
 if st.button('시험지 보기'):
-    show_pdf(uploaded_file)
+    show_pdf2(uploaded_file)
 else:
     st.write('버튼을 클릭하세요')
 
