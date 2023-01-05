@@ -20,12 +20,9 @@ st.write(type(test_num))
 kk = test_code.index[(test_code['시험지코드']==int(test_num))]
 
 kk2 = test_code.iloc[kk,2]
-st.write(type(kk2))
+question_num = int(kk2)
 
-
-
-question_num = st.text_input(':green[문항 수]를 입력하세요', int(kk2))
-st.write('문항 수는 '+question_num+'문항 입니다')
+st.write(':green[문항 수]는 '+question_num+'문항 입니다')
 
 
 
