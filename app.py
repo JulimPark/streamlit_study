@@ -22,9 +22,10 @@ st.write('문항 수는 '+question_num+'문항 입니다')
 
 no=[]
 for i in range(0, int(question_num)):
-    no.append('no'+str[i])
+    ns = 'no'+str(i)
+    no.append(ns)
 
-
+st.write(no)
 for i in range(0, int(question_num)):
     no[i] = st.radio(str(i+1)+'번 문항의 정답을 입력하세요.',('1','2','3','4','5'))
     st.write(no[i])
