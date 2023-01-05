@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 test_code = pd.read_csv('test_code.csv')
-st.write(test_code)
+st.write(test_code['시험지코드'])
 
 st.title('수학클리닉:blue[🞧]필요와충분')
 
