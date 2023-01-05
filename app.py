@@ -14,7 +14,7 @@ st.write('현재 시험지는 '+test_num+'입니다')
 
 num = 0
 ans = []
-test_list = {'문항번호':[num], '학생답':[ans]}
+test_list = {'문항번호':[num], '학생답':ans}
 
 df = pd.DataFrame(test_list)
 
@@ -28,7 +28,7 @@ def button_1():
     a = {'문항번호':[num], '학생답':'1'}
     df2 = pd.DataFrame(a)
     
-    df = pd.concat(df, df2)
+    df = pd.concat([df, df2])
     
     st.write(df)
 
