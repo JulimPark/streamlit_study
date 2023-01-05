@@ -37,4 +37,3 @@ for i in range(0, int(question_num)):
 st.write(no)
 for i in range(0, int(question_num)):
     no[i] = st.radio(str(i+1)+'번 문항의 정답을 입력하세요.',('1','2','3','4','5'))
-    st.write(no[i])
