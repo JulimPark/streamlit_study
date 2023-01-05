@@ -19,7 +19,8 @@ st.write(type(test_num))
 
 kk = test_code.index[(test_code['시험지코드']==int(test_num))]
 
-st.write(kk)
+kk2 = test_code.iloc[kk,2]
+st.write(kk2)
 
 
 
