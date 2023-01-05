@@ -16,7 +16,7 @@ st.write('현재 시험지는 '+test_num+'입니다')
 
 st.write(type(test_code['시험지코드'][3]))
 st.write(type(test_num))
-kk = test_code.index(test_code['시험지코드']==test_num)
+kk = test_code.index(test_code['시험지코드']==int(test_num))
 
 st.write(kk)
 
