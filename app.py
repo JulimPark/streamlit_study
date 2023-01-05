@@ -16,11 +16,14 @@ num = 0
 ans = []
 test_list = {'문항번호':num, '학생답':ans}
 
+df = pd.DataFrame(test_list)
 
-if st.button('1'):
+def button_1():
     num = num+1
     ans.append(1)
-    df = pd.DataFrame(test_list)
     st.dataframe(df)
 
 
+if st.button('1'):
+    button_1
+    
