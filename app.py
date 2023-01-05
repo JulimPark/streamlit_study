@@ -1,6 +1,8 @@
 import streamlit as st 
 import pandas as pd
 
+test_code = pd.read_csv('test_code.csv')
+st.write(test_code)
 
 st.title('수학클리닉:blue[🞧]필요와충분')
 
@@ -14,6 +16,8 @@ st.write('현재 시험지는 '+test_num+'입니다')
 
 question_num = st.text_input(':green[문항 수]를 입력하세요', 5)
 st.write('문항 수는 '+question_num+'문항 입니다')
+
+
 
 # no1 = st.radio(
 #     '1번 문항의 정답을 입력하세요.',('1','2','3','4','5')
