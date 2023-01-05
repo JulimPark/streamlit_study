@@ -14,9 +14,7 @@ st.write('현재 시험지는 '+test_num+'입니다')
 
 num = 0
 ans = []
-test_list = {'문항번호':[num], '학생답':[ans]}
 
-df = pd.DataFrame(test_list)
 
 def button_1():
     global num
@@ -25,26 +23,11 @@ def button_1():
     global df
     
     num = num + 1
-    a = {'문항번호':[num], '학생답':'1'}
-    df2 = pd.DataFrame(a)
+    ans.append(1)
     
-    df = pd.concat([df, df2])
-    
-    st.write(df)
+    st.write(ans)
 
-
-def button_2():
-    global num
-    global ans
-    global test_list
-    
-    num = num+1
-    df.loc[num]=[num, 2]
-    st.dataframe(df)
 
 if st.button('1'):
     button_1()
 
-
-if st.button('2'):
-    button_2()
