@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 test_code = pd.read_csv('test_code.csv')
-st.write(test_code['시험지코드'][3])
+no=[]
 
 st.title('수학클리닉:blue[🞧]필요와충분')
 
@@ -14,8 +14,6 @@ st.write('현재 응시자는 '+stu_name+'입니다')
 test_num = st.text_input('*:red[시험지코드]를 입력하세요 ', '0001')
 st.write('현재 시험지는 '+test_num+'입니다')
 
-st.write(type(test_code['시험지코드'][3]))
-st.write(type(test_num))
 
 kk = test_code.index[(test_code['시험지코드']==int(test_num))]
 
@@ -31,7 +29,7 @@ st.write(':green[문항 수]는 '+str(question_num)+'문항 입니다')
 # )
 # st.write(no1)
 
-no=[]
+
 for i in range(0, int(question_num)):
     ns = 'no'+str(i)
     no.append(ns)
