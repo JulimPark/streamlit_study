@@ -24,4 +24,4 @@ no=['no1', 'no2','no3']
 
 for i in range(0, int(question_num)):
     no[i] = st.radio(str(i)+'번 문항의 정답을 입력하세요.',('1','2','3','4','5'))
-    st.write(i)
+    st.write(no[i])
