@@ -22,7 +22,7 @@ kk = test_code.index[(test_code['시험지코드']==int(test_num))]
 kk2 = test_code.iloc[kk,2]
 question_num = int(kk2)
 
-st.write(':green[문항 수]는 '+question_num+'문항 입니다')
+st.write(':green[문항 수]는 '+str(question_num)+'문항 입니다')
 
 
 
