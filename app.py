@@ -19,6 +19,10 @@ test_list = {'문항번호':[num], '학생답':[ans]}
 df = pd.DataFrame(test_list)
 
 def button_1():
+    global num
+    global ans
+    global test_list
+    
     num = num+1
     ans.append(1)
     df = pd.DataFrame(test_list)
