@@ -25,5 +25,5 @@ def button_1():
 
 
 if st.button('1'):
-    button_1
+    button_1()
     
