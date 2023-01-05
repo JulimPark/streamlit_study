@@ -24,8 +24,12 @@ def button_1():
     global test_list
     global df
     
-    num = num+1
-    df.append({'문항번호':num, '학생답':'1'}, ignore_index=True)
+    num = num + 1
+    a = ['문항번호':num, '학생답':'1']
+    df2 = pd.DataFrame(a)
+    
+    df = pd.concat(df, df2)
+    
     st.write(df)
 
 
