@@ -31,7 +31,7 @@ st.write(':green[문항 수]는 '+str(question_num)+'문항 입니다')
 # )
 # st.write(no1)
 
-# no=[]
+no=[]
 for i in range(0, int(question_num)):
     ns = 'no'+str(i)
     no.append(ns)
