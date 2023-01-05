@@ -28,6 +28,18 @@ def button_1():
     st.dataframe(df)
 
 
+def button_2():
+    global num
+    global ans
+    global test_list
+    
+    num = num+1
+    df.loc[num]=[num, 2]
+    st.dataframe(df)
+
 if st.button('1'):
     button_1()
-    
+
+
+if st.button('2'):
+    button_2()
