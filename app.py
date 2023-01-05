@@ -14,7 +14,7 @@ st.write('현재 시험지는 '+test_num+'입니다')
 
 num = 0
 ans = []
-test_list = {'문항번호':num, '학생답':ans}
+test_list = {'문항번호':[num], '학생답':[ans]}
 
 df = pd.DataFrame(test_list)
 
