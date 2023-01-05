@@ -20,6 +20,6 @@ no1 = st.radio(
 )
 st.write(no1)
 
-for i in range(1, question_num):
+for i in range(1, int(question_num)):
     st.radio(i+'번 문항의 정답을 입력하세요.',('1','2','3','4','5'))
     st.write(i)
