@@ -24,7 +24,7 @@ st.write(kk2)
 
 
 
-question_num = st.text_input(':green[문항 수]를 입력하세요', 5)
+question_num = st.text_input(':green[문항 수]를 입력하세요', kk2)
 st.write('문항 수는 '+question_num+'문항 입니다')
 
 
