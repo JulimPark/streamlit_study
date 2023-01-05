@@ -25,7 +25,6 @@ def button_1():
     
     num = num+1
     ans.append(1)
-    df = pd.DataFrame(test_list)
     st.dataframe(df)
 
 
