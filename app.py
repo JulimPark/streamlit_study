@@ -39,7 +39,6 @@ for i in range(0, question_num):
     no[i] = st.radio(str(i+1)+'번 문항의 정답을 입력하세요.',('1','2','3','4','5'))
 
 
+output = {'문항번호':[i], '학생답':[no[i]]}
 
-for i in range(0, question_num):
-
-# submit_list={'문항번호':[num for num in range(0, question_num)], '학생답':}
+st.write(output)
