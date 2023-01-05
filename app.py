@@ -24,7 +24,7 @@ def button_1():
     global test_list
     
     num = num+1
-    df.append({'문항번호':num, '학생답':'1'}, ignore_index=True)
+    df.loc[num]=[num, 1]
     st.dataframe(df)
 
 
