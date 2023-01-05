@@ -12,22 +12,8 @@ st.write('현재 응시자는 '+stu_name+'입니다')
 test_num = st.text_input('*:red[시험지코드]를 입력하세요 ', '0001')
 st.write('현재 시험지는 '+test_num+'입니다')
 
-num = 0
-ans = []
 
-
-def button_1():
-    global num
-    global ans
-    global test_list
-    global df
-    
-    num = num + 1
-    ans.append(1)
-    
-    st.write(ans)
-
-
-if st.button('1'):
-    button_1()
-
+no1 = st.radio(
+    '1번 문항의 정답을 입력하세요.',('1','2','3','4','5')
+)
+st.write(no1)
