@@ -12,7 +12,7 @@ stu_name = st.text_input('*:blue[이름]을 입력하세요: ', '홍길동')
 st.write('현재 응시자는 '+stu_name+'입니다')
 
 test_num = st.text_input('*:red[시험지코드]를 입력하세요 ', '0001')
-st.write('현재 시험지는 '+test_num+'입니다')
+st.write('현재 시험지는 '+test_num+'번 입니다')
 
 
 kk = test_code.index[(test_code['시험지코드']==int(test_num))]
