@@ -25,7 +25,7 @@ def button_1():
     global df
     
     num = num+1
-    df.append({'문항번호':num, '학생답':1}, ignore_index=True)
+    df.append({'문항번호':num, '학생답':'1'}, ignore_index=True)
     st.write(df)
 
 
